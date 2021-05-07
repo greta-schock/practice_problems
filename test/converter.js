@@ -3,7 +3,7 @@
 var expect = require("chai").expect;
 var converter = require("../app/converter.js");
 
-describe("Color Code Converter", function() {
+describe("EXAMPLE: Color Code Converter", function() {
     //specification code
     describe("RBG to Hex conversion", function() {
         //specification for RBG to HEX converter
