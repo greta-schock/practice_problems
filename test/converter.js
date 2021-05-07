@@ -1,7 +1,7 @@
 //https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha
 
 var expect = require("chai").expect;
-var converter = require("../app/converter");
+var converter = require("../app/converter.js");
 
 describe("Color Code Converter", function() {
     //specification code
