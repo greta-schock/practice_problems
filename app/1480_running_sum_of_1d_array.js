@@ -20,7 +20,7 @@ Input: nums = [3,1,2,10,1]
 Output: [3,4,6,16,17]
 */
 
-var runningSum = function(nums) {
+exports.runningSum = function(nums) {
     
     if (nums.length === 0) {
         return [];
@@ -46,12 +46,3 @@ var runningSum = function(nums) {
 console.log(runningSum([1,2,3,4]));
 console.log(runningSum([1,1,1,1,1]));
 console.log(runningSum([3,1,2,10,1]));
-
-
-//Test
-
-var assert = require('assert');
-
-// describe('Array', function() {
-//     de
-// })
