@@ -46,3 +46,12 @@ var runningSum = function(nums) {
 console.log(runningSum([1,2,3,4]));
 console.log(runningSum([1,1,1,1,1]));
 console.log(runningSum([3,1,2,10,1]));
+
+
+//Test
+
+var assert = require('assert');
+
+// describe('Array', function() {
+//     de
+// })
