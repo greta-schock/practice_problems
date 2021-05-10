@@ -34,3 +34,29 @@ m == accounts.length
 n == accounts[i].length
 1 <= m, n <= 50
 1 <= accounts[i][j] <= 100 */
+
+exports.maximumWealth = function(accounts) {
+    //establish a "greatest wealth" variable set to 0
+    //iterate over the first array to access the individual customer's account 
+      //establish an individual account total variable set to 0 
+      //iterate over the account array 
+         //increment the individual account total by the current amount
+    
+      //if the individual account total is greater than the greatest wealth variable  
+       //reassign the value of the greatest wealth variable to be the individual account total 
+    
+    //return greatest wealth variable 
+    
+    var greatestWealth = 0; 
+    for (var i = 0; i < accounts.length; i++) {
+        var accountAmount = 0; 
+        var currentAccount = accounts[i];
+        for (var j = 0; j < currentAccount.length; j++) {
+            accountAmount += currentAccount[j]
+        }
+        if (accountAmount >= greatestWealth) {
+            greatestWealth = accountAmount;
+        }
+    }
+    return greatestWealth;
+};
