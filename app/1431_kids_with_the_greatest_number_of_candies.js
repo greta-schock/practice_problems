@@ -33,3 +33,21 @@ Constraints:
 1 <= extraCandies <= 50
 
 */
+exports.kidsWithCandies = function(candies, extraCandies) {
+    if (candies.length === 0) {
+        return [];
+    }
+    
+    var greatestNumOfCandies = Math.max(...candies);
+    
+    var result = [];
+    for (var i = 0; i < candies.length; i++) {
+        if ((candies[i] + extraCandies) >= greatestNumOfCandies) {
+            result.push(true)
+        } else {
+            result.push(false);
+        }
+    }
+    return result;
+    
+};
