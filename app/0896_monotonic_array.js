@@ -30,3 +30,33 @@ Note
 1. 1 <= nums.length <= 50000
 2. -100000 <= nums[i] <= 100000
 */
+
+var isMonotonic = function(nums) {
+    
+    //if array length is equal to 1
+      //return true 
+    if (nums.length === 1) {
+        return true;
+    }
+    
+    //DETERMINE IF NUMS IS INCREASING OR DECREASING 
+    
+    //if nums at index 0 is greater than nums at index 1
+      //reverse the nums array 
+    if (nums[0] > nums[nums.length - 1]){
+        nums.reverse();
+    }
+    
+    //iterate over the nums array 
+      //if the current value is greater than the next value
+        //return false
+    for (var i = 0; i < nums.length; i++) {
+        if (nums[i] > nums[i + 1]) {
+            return false;
+        }
+    }
+    
+    //return true 
+    return true;
+    
+};
