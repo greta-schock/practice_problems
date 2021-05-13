@@ -31,7 +31,7 @@ Note
 2. -100000 <= nums[i] <= 100000
 */
 
-var isMonotonic = function(nums) {
+exports.isMonotonic = function(nums) {
     
     //if array length is equal to 1
       //return true 
