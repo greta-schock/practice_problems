@@ -26,7 +26,7 @@ sentence consists of lowercase English letters.
  * @return {boolean}
  */
 
-var checkIfPangram = function (sentence) {
+exports.checkIfPangram = function (sentence) {
 
     if (sentence.length < 26) {
         return false;
