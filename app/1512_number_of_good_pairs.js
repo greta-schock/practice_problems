@@ -30,6 +30,11 @@ Constraints:
 */
 
 exports.numIdenticalPairs = function (nums) {
+
+    if (nums.length === 1) {
+        return 0;
+    }
+    
     var counter = 0; 
     for (var i = 0; i < nums.length; i++) {
         for (var j = 0; j < nums.length; j++) {
