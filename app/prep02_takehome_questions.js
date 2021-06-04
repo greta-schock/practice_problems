@@ -17,7 +17,7 @@ var fibonacci_series = function (n) {
 exports.fibonacci_series = fibonacci_series;
 
 
-// determining the most common string in an array.
+/* Determining the most common string in an array. */
 
 var mostCommonString = function (arr) {
     if (arr.length === 0) {
@@ -55,3 +55,6 @@ var mostCommonString = function (arr) {
 };
 
 exports.mostCommonString = mostCommonString;
+
+
+/* Counting common prefixes in a string */
