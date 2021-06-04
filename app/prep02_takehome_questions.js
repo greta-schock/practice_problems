@@ -2,7 +2,7 @@
 
 var fibonacci_series = function (n) {
     if (n <= 0) {
-        return undefined;
+        return null;
     }
 
     if (n === 1) {
@@ -14,6 +14,13 @@ var fibonacci_series = function (n) {
     }
 };
 
-console.log(fibonacci_series(0));
+exports.fibonacci_series = fibonacci_series;
+
 
 // determining the most common string in an array.
+
+var mostCommonString = function (arr) {
+    if (arr.length === 0) {
+        return 
+    }
+}
