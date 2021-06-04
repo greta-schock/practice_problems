@@ -40,3 +40,22 @@ Constraints:
 nums is sorted in ascending order.
 
 */
+
+var removeDuplicates = function(nums) {
+    if (nums.length === 0) {
+        return 0;
+    }
+    
+    var i = 0;
+    for (var j = 1; j < nums.length; j++) {
+        console.log('next number: ', nums[j], 'current number: ', nums[i]);
+        if (nums[j] !== nums[i]) {
+            i++;
+            nums[i] = nums[j];
+        }
+        console.log(nums)
+    }
+    return i + 1;
+};
+
+console.log('final result length: ', removeDuplicates([0,0,1,1,1,2,2,3,3,4]));
