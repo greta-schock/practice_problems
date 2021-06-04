@@ -48,12 +48,10 @@ exports.removeDuplicates = function(nums) {
     
     var i = 0;
     for (var j = 1; j < nums.length; j++) {
-        console.log('next number: ', nums[j], 'current number: ', nums[i]);
         if (nums[j] !== nums[i]) {
             i++;
             nums[i] = nums[j];
         }
-        console.log(nums)
     }
     return i + 1;
 };
