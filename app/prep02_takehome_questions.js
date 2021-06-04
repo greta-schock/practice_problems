@@ -64,7 +64,7 @@ exports.mostCommonString = mostCommonString;
 var countCommonPrefixes = function (string) {
 
     if (string.length === 0) {
-        return 0;
+        return null;
     }
 
     var arrOfStrings = string.split(' ');
@@ -89,7 +89,7 @@ var countCommonPrefixes = function (string) {
     var counter = 0; 
     var mostCommonPrefix = '';
     for (var prefix in reference) {
-        if (reference[prefix] > counter) {
+        if (reference[prefix] >= counter) {
             mostCommonPrefix = prefix;
             counter = reference[prefix];
         }
@@ -98,6 +98,3 @@ var countCommonPrefixes = function (string) {
 }
 
 exports.countCommonPrefixes = countCommonPrefixes;
-
-
-console.log(countCommonPrefixes('a ab abc abcd abcde abcdef'));

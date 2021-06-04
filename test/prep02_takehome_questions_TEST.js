@@ -1,5 +1,5 @@
 var { expect } = require('chai');
-var { fibonacci_series, mostCommonString } = require('../app/prep02_takehome_questions');
+var { fibonacci_series, mostCommonString, countCommonPrefixes } = require('../app/prep02_takehome_questions');
 
 describe('Takehome #02 Prep Questions', function() {
     it('Should print out n digits of the Fionacci sequence', function() {
@@ -25,6 +25,18 @@ describe('Takehome #02 Prep Questions', function() {
         expect(example2_3).to.equal('123');
         expect(example2_4).to.equal('abcdef');
     });
+
+    it('Should return the most common prefix in a string', function() {
+        var example3_1 = countCommonPrefixes('');
+        var example3_2 = countCommonPrefixes('a');
+        var example3_3 = countCommonPrefixes('a ab abc abcd abcde abcdef');
+        var example3_4 = countCommonPrefixes('predetermination predestination precint predator pretest prenup');
+        
+        expect(example3_1).to.equal(null);
+        expect(example3_2).to.equal('a');
+        expect(example3_3).to.equal('a');
+        expect(example3_4).to.equal('pre');
+    })
 });
 
 
