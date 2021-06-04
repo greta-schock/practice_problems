@@ -58,4 +58,20 @@ var removeDuplicates = function(nums) {
     return i + 1;
 };
 
-console.log('final result length: ', removeDuplicates([0,0,1,1,1,2,2,3,3,4]));
+//Why does this work?
+/*
+Process 
+  - The array is already sorted
+  - We use two pointers: 
+        i is the "slow-runner"
+        j is the "fast-runner"
+  - As long as nums[i] === nums[j], we will increment j to skip the duplicate 
+        - Something to note: we are using i as a sort of "counter" variable
+  - When nums[i] !== nums[j], the duplicate run has ended so we must copy its value to nums[i + 1]
+        - i is then incremented (because it is not a duplicate)
+        - Repeat the same process again until j reaches the end of the array 
+  - Return i + 1 
+
+Time Complexity: O(n) because n is the length of the array 
+Space Complexity: O(1)
+*/
