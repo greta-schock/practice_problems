@@ -41,7 +41,7 @@ nums is sorted in ascending order.
 
 */
 
-var removeDuplicates = function(nums) {
+exports.removeDuplicates = function(nums) {
     if (nums.length === 0) {
         return 0;
     }
