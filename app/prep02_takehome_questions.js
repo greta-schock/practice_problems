@@ -97,5 +97,7 @@ var countCommonPrefixes = function (string) {
     return mostCommonPrefix;
 }
 
+exports.countCommonPrefixes = countCommonPrefixes;
+
 
 console.log(countCommonPrefixes('a ab abc abcd abcde abcdef'));
