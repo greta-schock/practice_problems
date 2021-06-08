@@ -28,6 +28,7 @@ var fibonacciSeq = function (n) {
 
 exports.fibonacciSeq = fibonacciSeq;
 
+
 /*
 Given an array of a strings, as you remove characters from the beginning of the string (prefix), return an array of the matching prefixes count per string
 
@@ -78,13 +79,4 @@ exports.matchingPrefixesCounter = matchingPrefixesCounter;
 
 
 
-
-
-
-
-
-
-
-
-
-/* Maximum size rectangle binary sub-matrix with all 1s */
+/* DIDN'T GET TO IT- Maximum size rectangle binary sub-matrix with all 1s */

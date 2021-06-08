@@ -1,7 +1,7 @@
 var { expect } = require('chai');
 var { fibonacciSeq, matchingPrefixesCounter } = require('../app/HackerRank_eBay_Takehome');
 
-describe('HackerRank eBay Hacker Rank Questions', function() {
+describe('HackerRank eBay Questions', function() {
     it('Should print out n digits of the Fionacci sequence', function() {
         var example1_1 = fibonacciSeq(-10);
         var example1_2 = fibonacciSeq(0);
@@ -20,7 +20,7 @@ describe('HackerRank eBay Hacker Rank Questions', function() {
         var example2_1 = matchingPrefixesCounter([]);
         var example2_2 = matchingPrefixesCounter(['abcabcd'])
         var example2_3 = matchingPrefixesCounter(['a']);
-        var example2_4 = matchingPrefixesCounter(['abcabcd', 'abcabcd', 'abcabcd']);
+        var example2_4 = matchingPrefixesCounter(['abcabcd', 'ABCABCD', 'AbCaBCD']);
         var example2_5 = matchingPrefixesCounter(['abcabcd', 'gretagreat', 'elephant', 'banana']);
 
         expect(example2_1).to.eql([]);
