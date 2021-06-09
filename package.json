@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grsc0529/practice_problems.git"
+    "url": "git+https://github.com/greta-schock/practice_problems.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/grsc0529/practice_problems/issues"
+    "url": "https://github.com/greta-schock/practice_problems/issues"
   },
-  "homepage": "https://github.com/grsc0529/practice_problems#readme",
+  "homepage": "https://github.com/greta-schock/practice_problems#readme",
   "dependencies": {
     "chai": "^4.3.4",
     "express": "^4.17.1",
