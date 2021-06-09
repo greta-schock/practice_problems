@@ -24,3 +24,16 @@ Constraints:
 
 1 <= n <= 10^5
 */
+
+exports.subtractProductAndSum = function(n) {
+    var arr = (""+n).split("");
+    var product = 1; 
+    var sum = 0; 
+    
+    for (var i = 0; i < arr.length; i++) {
+        product *= Number(arr[i]);
+        sum += Number(arr[i]);
+    }
+    
+    return product - sum;
+};
