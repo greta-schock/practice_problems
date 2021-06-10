@@ -78,7 +78,8 @@ var convertStringToNum = function (str) {
     var result = array.join('');
     return Number(result);
 }
-var isSumEqual = function (firstWord, secondWord, targetWord) {
+
+exports.isSumEqual = function (firstWord, secondWord, targetWord) {
     return convertStringToNum(firstWord) + convertStringToNum(secondWord) === convertStringToNum(targetWord)
 
 };
