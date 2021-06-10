@@ -1,14 +1,6 @@
 /*
-1880. Check if Word Equals Summation of Two Words
-Easy
+1880. Check if Word Equals Summation of Two Words 
 
-151
-
-12
-
-Add to List
-
-Share
 The letter value of a letter is its position in the alphabet starting from 0 (i.e. 'a' -> 0, 'b' -> 1, 'c' -> 2, etc.).
 
 The numerical value of some string of lowercase English letters s is the concatenation of the letter values of each letter in s, which is then converted into an integer.
@@ -80,6 +72,6 @@ var convertStringToNum = function (str) {
 }
 
 exports.isSumEqual = function (firstWord, secondWord, targetWord) {
-    return convertStringToNum(firstWord) + convertStringToNum(secondWord) === convertStringToNum(targetWord)
-
+    return convertStringToNum(firstWord) + convertStringToNum(secondWord) === convertStringToNum(targetWord);
 };
+
