@@ -28,3 +28,11 @@ Constraints:
 
 0 <= c <= 231 - 1
 */
+
+exports.judgeSquareSum = function (c) {
+    for (let a = 0; a * a <= c; a++) {
+        const b = Math.sqrt(c - a*a);
+        if (Math.floor(b) === b) return true;
+    }
+    return false;
+}
