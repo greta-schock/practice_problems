@@ -38,3 +38,7 @@ veganFriendlyi and veganFriendly are 0 or 1.
 All idi are distinct
 
 */
+
+exports.filterRestaurants = function(restaurants, veganFriendly, maxPrice, maxDistance) {
+    
+};
