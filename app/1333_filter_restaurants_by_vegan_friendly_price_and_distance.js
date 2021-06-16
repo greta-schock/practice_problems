@@ -39,6 +39,47 @@ All idi are distinct
 
 */
 
+
+var bubbleSort = function(arrayOfArrays, givenIndex) {
+    for (var i = 0; i < arrayOfArrays.length; i++) {
+        for (var j = 0; j < (arrayOfArrays.length - i - 1); j++) {
+            if (arrayOfArrays[i][givenIndex] > arrayOfArrays[j][givenIndex]) {
+                var temp = arrayOfArrays[j];
+                arrayOfArrays[j] = arrayOfArrays[j + 1];
+                arrayOfArrays[j + 1] = temp;
+            }
+        }
+    }
+    return arrayOfArrays;
+}
+
+var ratingSwap = function(arrayOfArrays, idIndex, ratingIndex) {
+    for (var i = 0; i < arrayOfArrays.length; i++) {
+        for (var j = 0; j < (arrayOfArrays.length - i - 1); j++) {
+            if (arrayOfArrays[i][ratingIndex] === arrayOfArrays[j][ratingIndex] && arrayOfArrays[i][idIndex] > arrayOfArrays[j][idIndex]) {
+                var temp = arrayOfArrays[j];
+                arrayOfArrays[j] = arrayOfArrays[j + 1];
+                arrayOfArrays[j + 1] = temp;
+            }
+        }
+    }
+    return arrayOfArrays;
+}
+
 exports.filterRestaurants = function(restaurants, veganFriendly, maxPrice, maxDistance) {
+    var filteredArray = [];
+    for (var i = 0; i < restaurants.length; i++) {
+        if (restaurants[i][2] === veganFriendly && restaurants[i][3] <= maxPrice && restaurants[i][4] <= maxDistance) {
+            filteredArray.push(restaurants[i]);
+        }
+    }
+    var sortedByRating = bubbleSort(filteredArray, 1);
+    var sortByIdIfRatingIsEqual = ratingSwap(sortedByRating, 0, 1);
+    var result = [];
+    for (var x = 0; x < sortByIdIfRatingIsEqual.length; x++) {
+        result.push(sortByIdIfRatingIsEqual[x][0]);
+    }
+    return result;
+
     
 };
