@@ -16,3 +16,14 @@ Constraints:
 1 <= s.length <= 104
 s consists of lowercase English letters.
 */
+
+exports.removeDuplicateLetters = function(s) {
+    var ref = {};
+    for (var i = 0; i < s.length; i++) {
+        if (!ref[s[i]]) {
+            ref[s[i]] = true;
+        }
+    }
+    
+    return Object.keys(ref).sort().join('')
+};
